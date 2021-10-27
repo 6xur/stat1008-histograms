@@ -9,7 +9,7 @@ arr = [26, 23, 22, 31, 24, 34, 21, 22, 21, 28, 27, 21,
 
 # the histogram of the data
 plt.figure(1)
-result = plt.hist(arr, bins = 6)
+result = plt.hist(arr, bins = 5)
 plt.xlim((min(arr), max(arr)))
 
 # set titles
@@ -27,7 +27,7 @@ scale = len(arr) * dx
 plt.plot(x, norm.pdf(x, mean, sigma) * scale) 
 
 # save and display the figure
-plt.savefig("agePlot.png", dpi = 1200)
+plt.savefig("agePlot.png", dpi = 300)
 plt.show()
 
 print("mean:", mean)

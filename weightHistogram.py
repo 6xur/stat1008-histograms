@@ -9,7 +9,7 @@ arr = [95, 91, 112, 99, 92, 99, 85, 95, 87, 88, 108, 97,
 
 # the histogram of the data
 plt.figure(1)
-result = plt.hist(arr, bins = 6)
+result = plt.hist(arr, bins = 5)
 plt.xlim((min(arr), max(arr)))
 
 # set titles
@@ -27,7 +27,7 @@ scale = len(arr) * dx
 plt.plot(x, norm.pdf(x, mean, sigma) * scale) 
 
 # save and display the figure
-plt.savefig("weightPlot.png", dpi = 1200)
+plt.savefig("weightPlot.png", dpi = 300)
 plt.show()
 
 print("mean:", mean)
